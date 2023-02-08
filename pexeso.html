@@ -1,0 +1,75 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome file</title>
+  <link rel="stylesheet" href="https://stackedit.io/style.css" />
+</head>
+
+<body class="stackedit">
+  <div class="stackedit__html"><p>Aplikace “<strong>Dvojice</strong>” je hra, ve které je cílem najít všechny shodné karty. Uživatel si může zadat své jméno a zahájit hru kliknutím na tlačítko “<strong>Start</strong>”. Během hry se zobrazí počet tahů a uplynulý čas. Po dokončení hry se zobrazí výsledek a uživatelské jméno a výsledek se uloží do tabulky. Aplikace má možnost restartovat hru kliknutím na tlačítko “<strong>Zastavit</strong> <strong>a Znovu</strong>”.</p>
+   <br>
+<p>Kód definuje některé proměnné, jako jsou <strong>moves</strong>, <strong>timeValue</strong>, <strong>startButton</strong>, <strong>stopButton</strong>, <strong>gameContainer</strong>, <strong>result</strong> a ovládací prvky, které se používají pro přístup k prvkům webové stránce.<br>
+Pole 4 x 4 položek obsahuje seznam 12 objektů, každý s názvem a obrázkem. Hra má časomíru a počítadlo tahů.</p>
+<ol>
+<li>
+<p>Funkce <strong>timeGenerator</strong> navyšuje vteřiny a minuty a aktualizuje zobrazený čas.</p>
+</li>
+<li>
+<p>Funkce <strong>movesCounter</strong> zvyšuje proměnnou <strong>movesCount</strong> a aktualizuje zobrazení pohybů.</p>
+</li>
+<li>
+<p>Funkce <strong>createRandom</strong> generuje náhodnou množinu položek z pole položek.</p>
+</li>
+<li>
+<p>Funkce <strong>matrixGenerator</strong> vytváří herní mřížku a zobrazuje náhodné položky.</p>
+</li>
+<li>
+<p>Proměnná <strong>cards</strong> ukládá prvky s třídou “<strong>card-container</strong>”.</p>
+</li>
+<li>
+<p><strong>Event listener</strong> na každé kartě naslouchá události kliknutí a provádí akce k otočení karty a jejímu přiřazení k jiné kartě. Kód definuje funkce spuštění a zastavení hry.</p>
+<br>
+</li>
+</ol>
+<p><strong>Administrátor</strong> (já) má oprávnění k vytváření, úpravě a mazání dat, nastavení a správě nastavení aplikace a přidělování oprávnění jiným uživatelům.</p>
+<p><strong>Uživatel</strong> (hráč) má oprávnění zadat jméno, spustit a zastavit hru<br>
+<br>   <br><br>
+<strong>Entita: Hráč</strong></p>
+<ul>
+<li>Jméno (string)</li>
+<li>Skóre (integer)</li>
+</ul>
+<p><strong>Entita: Hra</strong></p>
+<ul>
+<li>Počet tahů (integer)</li>
+<li>Čas (datetime)</li>
+<li>Zdrojové obrázky (pole stringů)</li>
+</ul>
+<p><strong>Vztahy:</strong></p>
+<p>1 Hráč může mít několik her</p>
+<p>1 Hra patří pouze 1 Hráči<br>
+<br>   <br><br>
+Třídy v HTML kódu reprezentují elementy na stránce a určují jejich vzhled a chování.</p>
+<ol>
+<li>.<strong>wrapper</strong>: Třída určuje vzhled a umístění celého herního okna.</li>
+<li><strong>.stats-container</strong>: Třída určuje vzhled a umístění statistik hry.</li>
+<li>.<strong>game-container</strong>: Třída určuje vzhled a umístění hry.</li>
+<li><strong>.card-container</strong>: Třída určuje vzhled a chování karet v hře.</li>
+<li>.<strong>controls-container</strong>: Třída určuje vzhled a umístění tlačítek pro ovladání hry.</li>
+<li>.<strong>username-score-table</strong>: Třída určuje vzhled a umístění tabulky s jmény a skóre.</li>
+<li><strong>#start</strong>: Tlačítko určuje spuštění hry.</li>
+<li><strong>#stop</strong>: Tlačítko určuje zastavení a restart hry.</li>
+<li><strong>.enter-name</strong>: Třída určuje vzhled a umístění vstupního pole pro zadání jména.</li>
+</ol>
+<p>Základní CSS třídy pro <strong>padding</strong>, <strong>margin</strong>, <strong>fonty</strong>, atd. plní funkci vylepšení vzhledu stránky.<br>
+<br>   <br><br>
+HTML definuje strukturu. Stránka obsahuje vstupní pole pro zadání jména hráče, sekci pro zobrazení hry a sekci pro zobrazení statistik hry (počet tahů a čas). Zobrazí se také výsledek hry a v horní části je tabulka se skóre předchozích her hráče.</p>
+<p>Šablona CSS definuje styl stránky, včetně písma, barvy pozadí a rozvržení herních prvků. Definuje také styly tlačítek a karet používaných ve hře.</p>
+<p>Skript JavaScript zpracovává logiku hry: spuštění a zastavení hry, otáčení karet a výpočet výsledku a aktualizuje herní statistiky a tabulku výsledků.</p>
+</div>
+</body>
+
+</html>
