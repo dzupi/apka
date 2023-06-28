@@ -1,91 +1,58 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="cs">
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Kartičky</title>
-    <!-- Google Fonts -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap"
-      rel="stylesheet"
-    />
-    <!-- Stylesheet -->
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <section>
-      <div class="container">
-        <div class="card">
-          <div class="front">
-            <div class="content">
-              <img src="head.png" />
-              <h3>HLAVA <p>- head</p></h3>
-            </div>
-          </div>
-          <div class="back">
-            <div class="content">
-                <p>hlava - head </p>
-				<p>vlasy - hair</p>
-				<p>ucho !<i>pl.</i> 2 uši - ear/s</p>
-				<p>oko  !<i>pl.</i> 2 oči - eye/s</p>
-				<p>nos - nose</p>
-				<p>pusa - mouth</p>
-				<p>zub - tooth</p>
-				<p>jazyk - tongue</p>
-            </div>
-          </div>
-        </div>
-      </div>
+<meta charset="utf-8">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dvojice</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet" />
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="pexeso.css" />
+</head>
+<body>
+ 
 
-      <div class="container">
-        <div class="card">
-          <div class="front">
-            <div class="content">
-              <img src="torso.png" />
-              <h3>TĚLO <p>- body</p></h3>
-            </div>
-          </div>
-          <div class="back">
-            <div class="content">
-                <p>krk - neck</p>
-				<p>rameno - shoulder</p>
-				<p>1 ruka !<i>pl.</i> 2 ruce - hand/s</p>
-				<p>dlaň - palm</p>
-				<p>prst - finger</p>
-				<p>1 prso !<i>pl.</i> 2 prsa - breast/s</p>	
-				<p>břicho - belly</p>
-				<p>záda - back</p>
-            </div>
-          </div>
-        </div>
-      </div>
+ <div class="score-table">
+      <table>
+        <thead>
+          <tr>
+            <th>Jméno</th>
+            <th>Počet Tahů</th>
+            <th>Čas</th>
+          </tr>
+        </thead>
+        <tbody id="score-table"></tbody>
+      </table>
+    </div>
 
-      <div class="container">
-        <div class="card">
-          <div class="front">
-            <div class="content">
-              <img src="lower.png" />
-              <h3>SPODNÍ POLOVINA TĚLA <p>- lower body</p></h3>
-            </div>
-          </div>
-          <div class="back">
-            <div class="content">
-              <p>noha - leg</p>
-				<p>stehno - thigh</p>
-				<p>koleno - knee</p>
-				<p>lýtko - calf</p>
-				<p>chodidlo - foot</p>
-				<p>pata - heel</p>
-           </div>
-          </div>
-        </div>
-      </div>
-	   
-    <div class="controls-container">
-	  <button id="start">
+
+  <div class="wrapper">
+    <div class="stats-container">
+      <div id="moves-count"></div>
+      <div id="time"></div>
+    </div>
 	
-         <a href="file:///C:/Users/zdzup/Desktop/Karticky/pucle.html">ZAHRÁT SI PUCLE</a></button>
-	</div>  
-      </section>   
 
-  </body>
+    <div class="game-container"></div>
+    <button id="stop" class="hide">Zastavit a Znovu</button>
+  </div>
+  
+  
+  <div class="controls-container">
+    <p id="result"></p>
+	
+
+	<div class="enter-name">
+  <input type="text" id="username" placeholder="Enter your name">
+  <br>
+</div> 
+<br>
+
+    <button id="start">Start</button>
+	
+  </div>
+
+  <!-- Script -->
+  <script src="dvojiceSkript.js"></script>
+</body>
 </html>
